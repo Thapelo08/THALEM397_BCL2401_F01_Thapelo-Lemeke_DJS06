@@ -23,8 +23,11 @@ const people = [
   { name: "Frikkie", province: "Free State" },
 ];
 
-// ForEach Basics
+// Log each name with a matching province in the format "Name (Province)"
 people.forEach(person => {
-  console.log("Name:", person.name);
-  console.log("Province:", person.province);
+  console.log(`${person.name} (${person.province})`);
 });
+
+// Uppercase Transformation
+const uppercaseProvinces = people.map(person => person.province.toUpperCase());
+console.log(uppercaseProvinces);
