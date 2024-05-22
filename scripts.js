@@ -13,3 +13,18 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+const people = [
+  { name: "Ashwin", province: "Western Cape" },
+  { name: "Sibongile", province: "Gauteng" },
+  { name: "Jan-Hendrik", province: "Northern Cape" },
+  { name: "Sifso", province: "Eastern Cape" },
+  { name: "Shailen", province: "Kwazulu-Natal" },
+  { name: "Frikkie", province: "Free State" },
+];
+
+// ForEach Basics
+people.forEach(person => {
+  console.log("Name:", person.name);
+  console.log("Province:", person.province);
+});
