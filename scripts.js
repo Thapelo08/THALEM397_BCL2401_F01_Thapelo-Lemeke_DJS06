@@ -36,3 +36,7 @@ console.log(uppercaseProvinces);
 const nameLengths = people.map(person => person.name.length);
 console.log(nameLengths);
 
+
+// Sorting
+const sortedProvinces = people.map(person => person.province).sort();
+console.log(sortedProvinces);
