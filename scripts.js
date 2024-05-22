@@ -31,3 +31,8 @@ people.forEach(person => {
 // Uppercase Transformation
 const uppercaseProvinces = people.map(person => person.province.toUpperCase());
 console.log(uppercaseProvinces);
+
+// Name Lengths
+const nameLengths = people.map(person => person.name.length);
+console.log(nameLengths);
+
