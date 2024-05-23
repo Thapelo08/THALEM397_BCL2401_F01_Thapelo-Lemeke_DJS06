@@ -22,7 +22,7 @@ const people = [
   { name: "Shailen", province: "Kwazulu-Natal" },
   { name: "Frikkie", province: "Free State" },
 ];
-/*
+
 // Log each name with a matching province in the format "Name (Province)"
 people.forEach(person => {
   console.log(`${person.name} (${person.province})`);
@@ -39,9 +39,13 @@ console.log(nameLengths);
 
 // Sorting
 const sortedProvinces = people.map(name => name.province).sort();
-console.log(sortedProvinces);*/
+console.log(sortedProvinces);
 
 // Filtering Cape
 const filteredProvinces = people.map(person => person.province).filter(province => !province.includes("Cape"));
 console.log("Remaining Provinces:", filteredProvinces.length);
+
+//Finding 'S'
+const FindS = people.map(person => person.name.includes("S"));
+console.log(FindS);
 
