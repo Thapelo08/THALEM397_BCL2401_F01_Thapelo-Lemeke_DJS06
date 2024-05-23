@@ -61,4 +61,6 @@ console.log(
   // log Products
   products.map(product => product.name),
 
-  
+  // Filter by Name length
+ products.filter(product => product.name.length <= 5),
+  )
