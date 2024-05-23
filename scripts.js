@@ -45,7 +45,13 @@ console.log(sortedProvinces);
 const filteredProvinces = people.map(person => person.province).filter(province => !province.includes("Cape"));
 console.log("Remaining Provinces:", filteredProvinces.length);
 
-//Finding 'S'
+// Finding 'S'
 const FindS = people.map(person => person.name.includes("S"));
 console.log(FindS);
 
+// Creating object Mapping
+const nameToProvince = people.reduce((acc, person) => {
+  acc[person.name] = person.province;
+  return acc;
+}, {});
+console.log(nameToProvince); 
