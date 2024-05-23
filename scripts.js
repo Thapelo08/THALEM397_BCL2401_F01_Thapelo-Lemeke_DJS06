@@ -22,21 +22,26 @@ const people = [
   { name: "Shailen", province: "Kwazulu-Natal" },
   { name: "Frikkie", province: "Free State" },
 ];
-
+/*
 // Log each name with a matching province in the format "Name (Province)"
 people.forEach(person => {
   console.log(`${person.name} (${person.province})`);
 });
 
 // Uppercase Transformation
-const uppercaseProvinces = people.map(person => person.province.toUpperCase());
+const uppercaseProvinces = people.map(name => name.province.toUpperCase());
 console.log(uppercaseProvinces);
 
 // Name Lengths
-const nameLengths = people.map(person => person.name.length);
+const nameLengths = people.map(name => name.name.length);
 console.log(nameLengths);
 
 
 // Sorting
-const sortedProvinces = people.map(person => person.province).sort();
-console.log(sortedProvinces);
+const sortedProvinces = people.map(name => name.province).sort();
+console.log(sortedProvinces);*/
+
+// Filtering Cape
+const filteredProvinces = people.map(person => person.province).filter(province => !province.includes("Cape"));
+console.log("Remaining Provinces:", filteredProvinces.length);
+
