@@ -10,7 +10,7 @@ const products = [
   { product: 'mango', price: 6 },
   { product: 'potato', price: ' ' },
   { product: 'avocado', price: "8" },
-  { product: 'coffee', price: 10 },
+  { product: 'coffee', price: "10" },
   { product: 'tea', price: '' },
 ]
 
@@ -55,3 +55,10 @@ const nameToProvince = people.reduce((acc, person) => {
   return acc;
 }, {});
 console.log(nameToProvince); 
+
+
+console.log(
+  // log Products
+  products.map(product => product.name),
+
+  
