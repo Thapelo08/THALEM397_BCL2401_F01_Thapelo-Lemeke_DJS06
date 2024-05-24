@@ -46,7 +46,7 @@ const filteredProvinces = people.map(person => person.province).filter(province 
 console.log("Remaining Provinces:", filteredProvinces.length);
 
 // Finding 'S'
-const FindS = people.map(person => person.name.some("S"));
+const FindS = people.map(person => person.name.includes("S"));
 console.log(FindS);
 
 // Creating object Mapping
