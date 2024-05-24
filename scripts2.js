@@ -13,8 +13,8 @@ const products = [
     // log products
     // Use map to get an array of product names and join them into a single string separated by commas.
     products.map((product) => product.product).join(", "),
-  
-    // 2. Filter by Name Length
+
+    // Name lengths
     // Use filter to create a new array with products whose names are 5 characters or fewer.
     products.filter((product) => product.product.length <= 5),
   
