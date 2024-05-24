@@ -10,7 +10,7 @@ const products = [
 
 
   console.log(
-    // 1. Log Products
+    // log products
     // Use map to get an array of product names and join them into a single string separated by commas.
     products.map((product) => product.product).join(", "),
   
