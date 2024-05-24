@@ -27,7 +27,7 @@ const products = [
       .map((product) => ({ ...product, price: Number(product.price) }))
       .reduce((total, product) => total + product.price, 0),
   
-    // 4. Concatenate Product Names
+    // 4. Concantenate Product Names
     // Use reduce to accumulate a string that includes all product names concatenated together.
     products.reduce((acc, product) => acc + product.product, ""),
   
