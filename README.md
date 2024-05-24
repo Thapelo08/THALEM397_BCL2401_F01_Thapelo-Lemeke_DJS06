@@ -38,6 +38,7 @@ const products = [
 6. **Finding 'S'**: Create a boolean array using `map` and `some` to determine if a name contains the letter 'S'.
 7. **Creating Object Mapping**: Use `reduce` to transform the names array into an object mapping names to their respective provinces.
 
+
 #### Advanced Exercises (Single `console.log` Execution)
 For these exercises, wrap your logic in a single `console.log` statement:
 

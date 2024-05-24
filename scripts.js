@@ -12,7 +12,7 @@ const products = [
   { product: 'avocado', price: "8" },
   { product: 'coffee', price: "10" },
   { product: 'tea', price: '' },
-]
+];
 
 const people = [
   { name: "Ashwin", province: "Western Cape" },
@@ -46,7 +46,7 @@ const filteredProvinces = people.map(person => person.province).filter(province 
 console.log("Remaining Provinces:", filteredProvinces.length);
 
 // Finding 'S'
-const FindS = people.map(person => person.name.includes("S"));
+const FindS = people.map(person => person.name.some("S"));
 console.log(FindS);
 
 // Creating object Mapping
@@ -57,10 +57,4 @@ const nameToProvince = people.reduce((acc, person) => {
 console.log(nameToProvince); 
 
 
-console.log(
-  // log Products
-  products.map(product => product.name),
 
-  // Filter by Name length
- products.filter(product => product.name.length <= 5),
-  )
